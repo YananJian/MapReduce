@@ -8,8 +8,9 @@ import os
 
 def format_print(atc_date, atc_total):
     for atc, date_pv in atc_date.iteritems():
-        for date, pv in date_pv.iteritems():
-            print (str(atc_total.get(atc))+'\t'+ str(atc)+'\t'+ str(date)+ ':'+ str(pv))
+        if act_total.get(atc) > 100000:
+            for date, pv in date_pv.iteritems():
+                print (str(atc_total.get(atc))+'\t'+ str(atc)+'\t'+ str(date)+ ':'+ str(pv))
 
 def main():
     atc_date = {}
