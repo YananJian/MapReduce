@@ -23,7 +23,7 @@ def main(argv):
             continue
     
         tmp = line.split(' ')
-        date = os.environ["map_input_file"].split('-')[1]
+        date = os.environ["map_input_file"].split('-')[2][-2:]
         if len(tmp) > 2:
             print (tmp[1] +'\t'+date+'\t'+ tmp[2])
 
