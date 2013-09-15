@@ -9,7 +9,7 @@ import os
 def format_print(atc_date, atc_total):
     for atc, date_pv in atc_date.iteritems():
         for date, pv in date_pv.iteritems():
-            print (atc_total.get(atc)+'\t'+ atc+'\t'+ date+ ':'+ pv)
+            print (atc_total.get(atc)+'\t'+ atc+'\t'+ date+ ':'+ str(pv))
 
 def main():
     atc_date = {}
